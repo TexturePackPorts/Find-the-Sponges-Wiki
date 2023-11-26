@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script>
+      function updateAvatar() {
+        const userId = "YOUR_USER_ID"; // Replace with your user ID
+        const imageUrl = `https://www.roblox.com/headshot-thumbnail/image?userId=${userId}&width=150&height=150&format=png`;
+
+        document.getElementById("avatarImage").src = imageUrl;
+      }
+    </script>
+  </head>
+  <body>
+    <img id="avatarImage" src="" alt="Roblox Avatar">
+    <button onclick="updateAvatar()">Update Avatar</button>
+  </body>
+</html>
